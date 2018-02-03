@@ -29,4 +29,9 @@
     width: 60%;
     left: 20%;
   }
+
+  input[type="submit"]{
+      position:relative;
+      left: 65.54%;
+  }
   

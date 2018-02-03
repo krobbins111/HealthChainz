@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <head>
-  <title>BlockRx</title>
+  <title>Create Bill</title>
   <link rel="stylesheet" type="text/css" href="create.css">
 </head>
 
@@ -24,10 +24,27 @@
           <th>Cost</th>  
         </tr>    
         <tr>
-            <td><input type="text"  name="Access Key" placeholder="Patient No. E.g 8888888"></td>
-            <td><input type="text"  name="Access Key" placeholder="Access Key"></td>
-            <td><input type="text"  name="Access Key" placeholder="Access Key"></td>
-            <td><input type="text"  name="Access Key" placeholder="Access Key"></td>
+            <td><input type="text" id="patientNo" name="Access Key" placeholder="Patient No. E.g 8888888"></td>
+            <td><input type="text" id="service" name="Access Key" placeholder="Service"></td>
+            <td><input type="text" id="description" name="Access Key" placeholder="Description"></td>
+            <td><input type="text" id="price" name="Access Key" placeholder="Cost"></td>
         </tr> 
         </table>
+        <input align="middle" type="submit" name="submit" id = "add" value="Access">
     </div>
+    </div>
+    </body>
+    <script>
+        
+        var billInfo = [];
+        function retreiveData(){
+            var patientn = document.getElementById("patientNo").value;
+            var serv = document.getElementById("service").value;
+            var desc = document.getElementById("description").value;
+            var pri = document.getElementById("price").value;
+            var billItem = {patientNo:patientn, service:serv, description:desc,price:pri};
+            billInfo.push(billItem);
+            console.log(billInfo); 
+        }
+        document.getElementById("add").onclick = function() {retreiveData()};
+    </script>
