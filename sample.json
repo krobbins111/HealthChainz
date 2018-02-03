@@ -1,4 +1,4 @@
-Access-Control-Allow-Origin
+Access-Control-Allow-Origin: <origin>
 {
 	service:"surgery", 
 	cost:2626, 
