@@ -1,7 +1,7 @@
 Access-Control-Allow-Origin: <origin>
 {
-	service:"surgery", 
-	cost:2626, 
-	description:"Knee surgery",
-        patientNo:123
+	"service":"surgery", 
+	"cost":2626, 
+	"description":"Knee surgery",
+        "patientNo":123
 }
