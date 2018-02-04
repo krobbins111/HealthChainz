@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<head>
+  <title>BlockRx</title>
+  <link rel="stylesheet" type="text/css" href="approval.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <nav class="header">
+      <a class="logo">HealthChainz</a>
+      <ul>
+        <li><a href=#>Home</a></li>
+        <li><a href=#>My Account</a></li>
+        <li><a href=#>About</a></li>
+      </ul>
+    </nav>
+    <p><br></br></p>
+    <div class = "enter-content">
+    <div class="container">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                    <tr>
+                      <th>Patient No.</th>    
+                      <th>Service</th>
+                      <th>Description</th>
+                      <th>Cost</th>  
+                    </tr>   
+                  </thead>
+                  <tbody></tbody> 
+                  </table>
+                    <script>
+                      $(document).ready(function(data){
+                        $.getJSON("sample.json", function(data) {
+                          var items = []; //json object holding array 
+
+                          $.each(data, function(index, value){
+                            items.push("<tr>"); 
+                            console.log(value.billinfo.service);
+                            console.log(value.billinfo.description);
+                            console.log(value.billinfo.price);
+                            console.log(value.accessKey);
+                            items.push("<td id= ''" + index + "''>" + value.accessKey + "</td>");
+                            items.push("<td id= ''" + index + "''>" + value.billinfo.service + "</td>");
+                            items.push("<td id= ''" + index + "''>" + value.billinfo.description + "</td>");
+                            items.push("<td id= ''" + index + "''>" + value.billinfo.price + "</td>");
+                            items.push("</tr>"); 
+                            }); //populating array holding 
+                            $("<tbody/>", {html: items.join("")}).appendTo("table");
+                        });
+                      });
+                      
+                    </script>
+
+    </div>
+    </div>
+  </body>

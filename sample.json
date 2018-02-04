@@ -1,6 +1,1 @@
-{
-	"service":"surgery", 
-	"cost":2626, 
-	"description":"Knee surgery",
-        "patientNo":123
-}
+[{"billinfo":{"service":"a","description":"s","price":"1"},"accessKey":"123"},{"billinfo":{"service":"f","description":"g","price":"65"},"accessKey":"123123"}]

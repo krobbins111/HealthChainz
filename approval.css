@@ -39,15 +39,21 @@
     text-decoration: none;
     color: white;
   }
-  .enter-content {
-    position: relative;
-    top: 75px;
-    width: 60%;
-    left: 20%;
-  }
 
-  input[type="submit"]{
-      position:relative;
-      left: 65.54%;
-  }
-  
+.enter-content {
+  position: relative;
+  top: 75px;
+  width: 60%;
+  left: 20%;
+}
+
+.container{
+  position: relative;
+  left:-30%;
+}
+
+
+input[type="submit"]{
+    position:relative;
+    left: 65.54%;
+}
