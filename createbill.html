@@ -54,7 +54,7 @@
         }
         function exportData(){
           var txtFile = "test.txt";
-          var file = new File(txtFile,"write");
+          var file = new File([""],"file.json");
           var str = JSON.stringify(billInfo);
           console.log(str);
         }
