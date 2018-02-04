@@ -7,18 +7,21 @@
 
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="./path/to/web3.min.js"></script>
+  <script type="text/javascript" src="./dist/truffle-contract.min.js"></script>
 </head>
 
 <body>
   <div class="content">
     <nav class="header">
-      <a class="logo">HealthChainz</a>
+      <a class="logo">BlockRx</a>
       <ul>
-        <li><a href=#>Home</a></li>
-        <li><a href=#>My Account</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index/html">My Account</a></li>
         <li><a href=#>About</a></li>
       </ul>
-    </nav>
+    </nav>f
     <p><br></br></p>
     <div class = "enter-content">
     <div class="container">
@@ -33,20 +36,31 @@
                   </thead>
                   <tbody></tbody> 
                   </table>
-                    <script>
+                    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script>
+      function retreiveData(){
+           var jqxhr = $.post( "/approval", {accessKey:document.getElementById("userAccess").value}, function(data) {
+               console.log(data);
+                  console.log( "success " + data );
+                })
+                  .fail(function(data) {
+                    console.log( "error "  + data);
+                  });
+            
+        }
                       $(document).ready(function(data){
                         $.getJSON("sample.json", function(data) {
                           var items = []; //json object holding array 
                           var totalCost = 0;
                           
-
                           $.each(data, function(index, value){
                             items.push("<tr>"); 
                             totalCost += value.billinfo.price;
-                            console.log(value.billinfo.service);
-                            console.log(value.billinfo.description);
-                            console.log(value.billinfo.price);
-                            console.log(value.accessKey);
+                            console.log(totalCost);
                             items.push("<td id= ''" + index + "''>" + value.accessKey + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.service + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.description + "</td>");
@@ -55,19 +69,24 @@
                             }); 
                             $("<tbody/>", {html: items.join("")}).appendTo("table");
                         });
-                      }); // add total amount to be paid! 
+                      }); 
                       
                     </script>
 
     </div>
+    <center>
     <button onclick="approve()"><a href="receipt.html">Approve Transaction</a></button>
+
     <button onclick="deny()"><a href="receipt.html">Deny Transaction</a></button>
+  </center>
+  <script>src = "RunContract.js"</script>
     <script>
       function deny(){
         alert("Please explain briefly why this invoice is incorrect or unacceptable:");
       };
       function approve(){
         alert("Thank you. Your payment has been instantly received by your doctor.");
+        startContract();
       }
     </script>
   </body>
