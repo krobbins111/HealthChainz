@@ -37,6 +37,7 @@ body{
 
   .header ul li:hover {
     background-color: rgb(34, 160, 154);
+    transition: .4s;
     padding: 40px 20px 32px 20px;
     display: inline;
     margin-left: 40px;
