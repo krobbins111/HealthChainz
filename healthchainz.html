@@ -32,7 +32,7 @@
 </script>
 <script>
       function retreiveData(){
-           var jqxhr = $.post( "/getdoctor", {accessKey:document.getElementById("docAccess").value}, function(data) {
+           var jqxhr = $.post( "/health", {accessKey:document.getElementById("userAccess").value}, function(data) {
                console.log(data);
                   console.log( "success " + data );
                 })
@@ -42,9 +42,10 @@
             
         }
         var userAccessKey;
-        function retreiveData(){
+        function retreiveData1(){
             userAccessKey= document.getElementById("userAccess").value;
             console.log(userAccessKey); 
+            retreiveData();
         }
-        document.getElementById("submit").onclick = function() {retreiveData()};
+        document.getElementById("submit").onclick = function() {retreiveData1()};
         </script>
