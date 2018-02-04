@@ -74,6 +74,7 @@ contract Purchase {
         public
         onlyBuyer
         inState(State.Locked)
+        payable
     {
         ItemReceived();
         // It is important to change the state first because

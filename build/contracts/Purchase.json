@@ -104,16 +104,16 @@
       "inputs": [],
       "name": "confirmReceived",
       "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
+      "payable": true,
+      "stateMutability": "payable",
       "type": "function"
     }
   ],
-  "bytecode": "0x606060405233600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060023481151561005157fe5b046000819055503460005460020214151561006b57600080fd5b6106518061007a6000396000f300606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308551a531461008857806335a063b4146100dd5780633fa4f245146100f25780637150d8ae1461011b57806373fac6f014610170578063c19d93fb14610185578063d6960697146101bc575b600080fd5b341561009357600080fd5b61009b6101c6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100e857600080fd5b6100f06101ec565b005b34156100fd57600080fd5b610105610348565b6040518082815260200191505060405180910390f35b341561012657600080fd5b61012e61034e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561017b57600080fd5b610183610374565b005b341561019057600080fd5b610198610534565b604051808260028111156101a857fe5b60ff16815260200191505060405180910390f35b6101c4610547565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561024857600080fd5b600080600281111561025657fe5b600260149054906101000a900460ff16600281111561027157fe5b14151561027d57600080fd5b7f72c874aeff0b183a56e2b79c71b46e1aed4dee5e09862134b8821ba2fddbf8bf60405160405180910390a160028060146101000a81548160ff021916908360028111156102c757fe5b0217905550600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561034557600080fd5b50565b60005481565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156103d057600080fd5b60018060028111156103de57fe5b600260149054906101000a900460ff1660028111156103f957fe5b14151561040557600080fd5b7fe89152acd703c9d8c7d28829d443260b411454d45394e7995815140c8cbcbcf760405160405180910390a160028060146101000a81548160ff0219169083600281111561044f57fe5b0217905550600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6000549081150290604051600060405180830381858888f1935050505015156104b857600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561053157600080fd5b50565b600260149054906101000a900460ff1681565b600080600281111561055557fe5b600260149054906101000a900460ff16600281111561057057fe5b14151561057c57600080fd5b600054600202341480151561059057600080fd5b7fd5d55c8a68912e9a110618df8d5e2e83b8d83211c57a8ddd1203df92885dc88160405160405180910390a133600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506001600260146101000a81548160ff0219169083600281111561061c57fe5b021790555050505600a165627a7a72305820e239d6c0b53fcb05afe40a56169e605a53397b3a212c2a3cf5ed5b7e1868b5cd0029",
-  "deployedBytecode": "0x606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308551a531461008857806335a063b4146100dd5780633fa4f245146100f25780637150d8ae1461011b57806373fac6f014610170578063c19d93fb14610185578063d6960697146101bc575b600080fd5b341561009357600080fd5b61009b6101c6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100e857600080fd5b6100f06101ec565b005b34156100fd57600080fd5b610105610348565b6040518082815260200191505060405180910390f35b341561012657600080fd5b61012e61034e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561017b57600080fd5b610183610374565b005b341561019057600080fd5b610198610534565b604051808260028111156101a857fe5b60ff16815260200191505060405180910390f35b6101c4610547565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561024857600080fd5b600080600281111561025657fe5b600260149054906101000a900460ff16600281111561027157fe5b14151561027d57600080fd5b7f72c874aeff0b183a56e2b79c71b46e1aed4dee5e09862134b8821ba2fddbf8bf60405160405180910390a160028060146101000a81548160ff021916908360028111156102c757fe5b0217905550600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561034557600080fd5b50565b60005481565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156103d057600080fd5b60018060028111156103de57fe5b600260149054906101000a900460ff1660028111156103f957fe5b14151561040557600080fd5b7fe89152acd703c9d8c7d28829d443260b411454d45394e7995815140c8cbcbcf760405160405180910390a160028060146101000a81548160ff0219169083600281111561044f57fe5b0217905550600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6000549081150290604051600060405180830381858888f1935050505015156104b857600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561053157600080fd5b50565b600260149054906101000a900460ff1681565b600080600281111561055557fe5b600260149054906101000a900460ff16600281111561057057fe5b14151561057c57600080fd5b600054600202341480151561059057600080fd5b7fd5d55c8a68912e9a110618df8d5e2e83b8d83211c57a8ddd1203df92885dc88160405160405180910390a133600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506001600260146101000a81548160ff0219169083600281111561061c57fe5b021790555050505600a165627a7a72305820e239d6c0b53fcb05afe40a56169e605a53397b3a212c2a3cf5ed5b7e1868b5cd0029",
-  "sourceMap": "28:2349:0:-;;;429:10;420:6;;:19;;;;;;;;;;;;;;;;;;470:1;458:9;:13;;;;;;;;450:5;:21;;;;505:9;495:5;;491:1;:9;490:24;482:33;;;;;;;;28:2349;;;;;;",
-  "deployedSourceMap": "28:2349:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;77:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1113:191;;;;;;;;;;;;;;53:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;105:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1833:541;;;;;;;;;;;;;;178:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1483:240;;;;;;77:21;;;;;;;;;;;;;:::o;1113:191::-;768:6;;;;;;;;;;;754:20;;:10;:20;;;746:29;;;;;;;;1183:13;862:6;853:15;;;;;;;;:5;;;;;;;;;;;:15;;;;;;;;;845:24;;;;;;;;1214:9;;;;;;;;;;1242:14;1234:5;;:22;;;;;;;;;;;;;;;;;;;;;;;;1267:6;;;;;;;;;;;:15;;:29;1283:4;:12;;;1267:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;786:1;1113:191::o;53:17::-;;;;:::o;105:20::-;;;;;;;;;;;;;:::o;1833:541::-;679:5;;;;;;;;;;;665:19;;:10;:19;;;657:28;;;;;;;;1912:12;862:6;853:15;;;;;;;;:5;;;;;;;;;;;:15;;;;;;;;;845:24;;;;;;;;1942:14;;;;;;;;;;2136;2128:5;;:22;;;;;;;;;;;;;;;;;;;;;;;;2305:5;;;;;;;;;;;:14;;:21;2320:5;;2305:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2337:6;;;;;;;;;;;:15;;:29;2353:4;:12;;;2337:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;696:1;1833:541::o;178:18::-;;;;;;;;;;;;;:::o;1483:240::-;1543:13;862:6;853:15;;;;;;;;:5;;;;;;;;;;;:15;;;;;;;;;845:24;;;;;;;;1595:5;;1591:1;:9;1577;:24;586:10;578:19;;;;;;;;1636;;;;;;;;;;1674:10;1666:5;;:18;;;;;;;;;;;;;;;;;;1703:12;1695:5;;:20;;;;;;;;;;;;;;;;;;;;;;;;880:1;1483:240;:::o",
-  "source": "pragma solidity ^0.4.11;\r\n\r\ncontract Purchase {\r\n    uint public value;\r\n    address public seller;\r\n    address public buyer;\r\n    enum State { Created, Locked, Inactive }\r\n    State public state;\r\n\r\n    // Ensure that `msg.value` is an even number.\r\n    // Division will truncate if it is an odd number.\r\n    // Check via multiplication that it wasn't an odd number.\r\n    function Purchase() public payable {\r\n        seller = msg.sender;\r\n        value = msg.value / 2;\r\n        require((2 * value) == msg.value);\r\n    }\r\n\r\n    modifier condition(bool _condition) {\r\n        require(_condition);\r\n        _;\r\n    }\r\n\r\n    modifier onlyBuyer() {\r\n        require(msg.sender == buyer);\r\n        _;\r\n    }\r\n\r\n    modifier onlySeller() {\r\n        require(msg.sender == seller);\r\n        _;\r\n    }\r\n\r\n    modifier inState(State _state) {\r\n        require(state == _state);\r\n        _;\r\n    }\r\n\r\n    event Aborted();\r\n    event PurchaseConfirmed();\r\n    event ItemReceived();\r\n\r\n    /// Abort the purchase and reclaim the ether.\r\n    /// Can only be called by the seller before\r\n    /// the contract is locked.\r\n    function abort()\r\n        public\r\n        onlySeller\r\n        inState(State.Created)\r\n    {\r\n        Aborted();\r\n        state = State.Inactive;\r\n        seller.transfer(this.balance);\r\n    }\r\n\r\n    /// Confirm the purchase as buyer.\r\n    /// Transaction has to include `2 * value` ether.\r\n    /// The ether will be locked until confirmReceived\r\n    /// is called.\r\n    function confirmPurchase()\r\n        public\r\n        inState(State.Created)\r\n        condition(msg.value == (2 * value))\r\n        payable\r\n    {\r\n        PurchaseConfirmed();\r\n        buyer = msg.sender;\r\n        state = State.Locked;\r\n    }\r\n\r\n    /// Confirm that you (the buyer) received the item.\r\n    /// This will release the locked ether.\r\n    function confirmReceived()\r\n        public\r\n        onlyBuyer\r\n        inState(State.Locked)\r\n    {\r\n        ItemReceived();\r\n        // It is important to change the state first because\r\n        // otherwise, the contracts called using `send` below\r\n        // can call in again here.\r\n        state = State.Inactive;\r\n\r\n        // NOTE: This actually allows both the buyer and the seller to\r\n        // block the refund - the withdraw pattern should be used.\r\n\r\n        buyer.transfer(value);\r\n        seller.transfer(this.balance);\r\n    }\r\n}",
+  "bytecode": "0x606060405233600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060023481151561005157fe5b046000819055503460005460020214151561006b57600080fd5b6106468061007a6000396000f300606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308551a531461008857806335a063b4146100dd5780633fa4f245146100f25780637150d8ae1461011b57806373fac6f014610170578063c19d93fb1461017a578063d6960697146101b1575b600080fd5b341561009357600080fd5b61009b6101bb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100e857600080fd5b6100f06101e1565b005b34156100fd57600080fd5b61010561033d565b6040518082815260200191505060405180910390f35b341561012657600080fd5b61012e610343565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610178610369565b005b341561018557600080fd5b61018d610529565b6040518082600281111561019d57fe5b60ff16815260200191505060405180910390f35b6101b961053c565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561023d57600080fd5b600080600281111561024b57fe5b600260149054906101000a900460ff16600281111561026657fe5b14151561027257600080fd5b7f72c874aeff0b183a56e2b79c71b46e1aed4dee5e09862134b8821ba2fddbf8bf60405160405180910390a160028060146101000a81548160ff021916908360028111156102bc57fe5b0217905550600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561033a57600080fd5b50565b60005481565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156103c557600080fd5b60018060028111156103d357fe5b600260149054906101000a900460ff1660028111156103ee57fe5b1415156103fa57600080fd5b7fe89152acd703c9d8c7d28829d443260b411454d45394e7995815140c8cbcbcf760405160405180910390a160028060146101000a81548160ff0219169083600281111561044457fe5b0217905550600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6000549081150290604051600060405180830381858888f1935050505015156104ad57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561052657600080fd5b50565b600260149054906101000a900460ff1681565b600080600281111561054a57fe5b600260149054906101000a900460ff16600281111561056557fe5b14151561057157600080fd5b600054600202341480151561058557600080fd5b7fd5d55c8a68912e9a110618df8d5e2e83b8d83211c57a8ddd1203df92885dc88160405160405180910390a133600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506001600260146101000a81548160ff0219169083600281111561061157fe5b021790555050505600a165627a7a72305820cd12e33229c486ef5aa10f4d365af6cfd2998abbcb727d8771659d21d75702e00029",
+  "deployedBytecode": "0x606060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308551a531461008857806335a063b4146100dd5780633fa4f245146100f25780637150d8ae1461011b57806373fac6f014610170578063c19d93fb1461017a578063d6960697146101b1575b600080fd5b341561009357600080fd5b61009b6101bb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156100e857600080fd5b6100f06101e1565b005b34156100fd57600080fd5b61010561033d565b6040518082815260200191505060405180910390f35b341561012657600080fd5b61012e610343565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610178610369565b005b341561018557600080fd5b61018d610529565b6040518082600281111561019d57fe5b60ff16815260200191505060405180910390f35b6101b961053c565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561023d57600080fd5b600080600281111561024b57fe5b600260149054906101000a900460ff16600281111561026657fe5b14151561027257600080fd5b7f72c874aeff0b183a56e2b79c71b46e1aed4dee5e09862134b8821ba2fddbf8bf60405160405180910390a160028060146101000a81548160ff021916908360028111156102bc57fe5b0217905550600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561033a57600080fd5b50565b60005481565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156103c557600080fd5b60018060028111156103d357fe5b600260149054906101000a900460ff1660028111156103ee57fe5b1415156103fa57600080fd5b7fe89152acd703c9d8c7d28829d443260b411454d45394e7995815140c8cbcbcf760405160405180910390a160028060146101000a81548160ff0219169083600281111561044457fe5b0217905550600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc6000549081150290604051600060405180830381858888f1935050505015156104ad57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050151561052657600080fd5b50565b600260149054906101000a900460ff1681565b600080600281111561054a57fe5b600260149054906101000a900460ff16600281111561056557fe5b14151561057157600080fd5b600054600202341480151561058557600080fd5b7fd5d55c8a68912e9a110618df8d5e2e83b8d83211c57a8ddd1203df92885dc88160405160405180910390a133600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506001600260146101000a81548160ff0219169083600281111561061157fe5b021790555050505600a165627a7a72305820cd12e33229c486ef5aa10f4d365af6cfd2998abbcb727d8771659d21d75702e00029",
+  "sourceMap": "28:2366:0:-;;;429:10;420:6;;:19;;;;;;;;;;;;;;;;;;470:1;458:9;:13;;;;;;;;450:5;:21;;;;505:9;495:5;;491:1;:9;490:24;482:33;;;;;;;;28:2366;;;;;;",
+  "deployedSourceMap": "28:2366:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;77:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1113:191;;;;;;;;;;;;;;53:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;105:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1833:558;;;;;;178:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1483:240;;;;;;77:21;;;;;;;;;;;;;:::o;1113:191::-;768:6;;;;;;;;;;;754:20;;:10;:20;;;746:29;;;;;;;;1183:13;862:6;853:15;;;;;;;;:5;;;;;;;;;;;:15;;;;;;;;;845:24;;;;;;;;1214:9;;;;;;;;;;1242:14;1234:5;;:22;;;;;;;;;;;;;;;;;;;;;;;;1267:6;;;;;;;;;;;:15;;:29;1283:4;:12;;;1267:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;786:1;1113:191::o;53:17::-;;;;:::o;105:20::-;;;;;;;;;;;;;:::o;1833:558::-;679:5;;;;;;;;;;;665:19;;:10;:19;;;657:28;;;;;;;;1912:12;862:6;853:15;;;;;;;;:5;;;;;;;;;;;:15;;;;;;;;;845:24;;;;;;;;1959:14;;;;;;;;;;2153;2145:5;;:22;;;;;;;;;;;;;;;;;;;;;;;;2322:5;;;;;;;;;;;:14;;:21;2337:5;;2322:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2354:6;;;;;;;;;;;:15;;:29;2370:4;:12;;;2354:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;696:1;1833:558::o;178:18::-;;;;;;;;;;;;;:::o;1483:240::-;1543:13;862:6;853:15;;;;;;;;:5;;;;;;;;;;;:15;;;;;;;;;845:24;;;;;;;;1595:5;;1591:1;:9;1577;:24;586:10;578:19;;;;;;;;1636;;;;;;;;;;1674:10;1666:5;;:18;;;;;;;;;;;;;;;;;;1703:12;1695:5;;:20;;;;;;;;;;;;;;;;;;;;;;;;880:1;1483:240;:::o",
+  "source": "pragma solidity ^0.4.11;\r\n\r\ncontract Purchase {\r\n    uint public value;\r\n    address public seller;\r\n    address public buyer;\r\n    enum State { Created, Locked, Inactive }\r\n    State public state;\r\n\r\n    // Ensure that `msg.value` is an even number.\r\n    // Division will truncate if it is an odd number.\r\n    // Check via multiplication that it wasn't an odd number.\r\n    function Purchase() public payable {\r\n        seller = msg.sender;\r\n        value = msg.value / 2;\r\n        require((2 * value) == msg.value);\r\n    }\r\n\r\n    modifier condition(bool _condition) {\r\n        require(_condition);\r\n        _;\r\n    }\r\n\r\n    modifier onlyBuyer() {\r\n        require(msg.sender == buyer);\r\n        _;\r\n    }\r\n\r\n    modifier onlySeller() {\r\n        require(msg.sender == seller);\r\n        _;\r\n    }\r\n\r\n    modifier inState(State _state) {\r\n        require(state == _state);\r\n        _;\r\n    }\r\n\r\n    event Aborted();\r\n    event PurchaseConfirmed();\r\n    event ItemReceived();\r\n\r\n    /// Abort the purchase and reclaim the ether.\r\n    /// Can only be called by the seller before\r\n    /// the contract is locked.\r\n    function abort()\r\n        public\r\n        onlySeller\r\n        inState(State.Created)\r\n    {\r\n        Aborted();\r\n        state = State.Inactive;\r\n        seller.transfer(this.balance);\r\n    }\r\n\r\n    /// Confirm the purchase as buyer.\r\n    /// Transaction has to include `2 * value` ether.\r\n    /// The ether will be locked until confirmReceived\r\n    /// is called.\r\n    function confirmPurchase()\r\n        public\r\n        inState(State.Created)\r\n        condition(msg.value == (2 * value))\r\n        payable\r\n    {\r\n        PurchaseConfirmed();\r\n        buyer = msg.sender;\r\n        state = State.Locked;\r\n    }\r\n\r\n    /// Confirm that you (the buyer) received the item.\r\n    /// This will release the locked ether.\r\n    function confirmReceived()\r\n        public\r\n        onlyBuyer\r\n        inState(State.Locked)\r\n        payable\r\n    {\r\n        ItemReceived();\r\n        // It is important to change the state first because\r\n        // otherwise, the contracts called using `send` below\r\n        // can call in again here.\r\n        state = State.Inactive;\r\n\r\n        // NOTE: This actually allows both the buyer and the seller to\r\n        // block the refund - the withdraw pattern should be used.\r\n\r\n        buyer.transfer(value);\r\n        seller.transfer(this.balance);\r\n    }\r\n}",
   "sourcePath": "C:\\Users\\kevin\\OneDrive\\Documents\\GitHub\\HealthChainz1\\HealthChainz\\contracts\\Purchase.sol",
   "ast": {
     "attributes": {
@@ -2067,9 +2067,9 @@
               "implemented": true,
               "isConstructor": false,
               "name": "confirmReceived",
-              "payable": false,
+              "payable": true,
               "scope": 176,
-              "stateMutability": "nonpayable",
+              "stateMutability": "payable",
               "superFunction": null,
               "visibility": "public"
             },
@@ -2094,7 +2094,7 @@
                 "children": [],
                 "id": 152,
                 "name": "ParameterList",
-                "src": "1931:0:0"
+                "src": "1948:0:0"
               },
               {
                 "attributes": {
@@ -2210,17 +2210,17 @@
                             },
                             "id": 153,
                             "name": "Identifier",
-                            "src": "1942:12:0"
+                            "src": "1959:12:0"
                           }
                         ],
                         "id": 154,
                         "name": "FunctionCall",
-                        "src": "1942:14:0"
+                        "src": "1959:14:0"
                       }
                     ],
                     "id": 155,
                     "name": "ExpressionStatement",
-                    "src": "1942:14:0"
+                    "src": "1959:14:0"
                   },
                   {
                     "children": [
@@ -2247,7 +2247,7 @@
                             },
                             "id": 156,
                             "name": "Identifier",
-                            "src": "2128:5:0"
+                            "src": "2145:5:0"
                           },
                           {
                             "attributes": {
@@ -2273,22 +2273,22 @@
                                 },
                                 "id": 157,
                                 "name": "Identifier",
-                                "src": "2136:5:0"
+                                "src": "2153:5:0"
                               }
                             ],
                             "id": 158,
                             "name": "MemberAccess",
-                            "src": "2136:14:0"
+                            "src": "2153:14:0"
                           }
                         ],
                         "id": 159,
                         "name": "Assignment",
-                        "src": "2128:22:0"
+                        "src": "2145:22:0"
                       }
                     ],
                     "id": 160,
                     "name": "ExpressionStatement",
-                    "src": "2128:22:0"
+                    "src": "2145:22:0"
                   },
                   {
                     "children": [
@@ -2336,12 +2336,12 @@
                                 },
                                 "id": 161,
                                 "name": "Identifier",
-                                "src": "2305:5:0"
+                                "src": "2322:5:0"
                               }
                             ],
                             "id": 163,
                             "name": "MemberAccess",
-                            "src": "2305:14:0"
+                            "src": "2322:14:0"
                           },
                           {
                             "attributes": {
@@ -2355,17 +2355,17 @@
                             },
                             "id": 164,
                             "name": "Identifier",
-                            "src": "2320:5:0"
+                            "src": "2337:5:0"
                           }
                         ],
                         "id": 165,
                         "name": "FunctionCall",
-                        "src": "2305:21:0"
+                        "src": "2322:21:0"
                       }
                     ],
                     "id": 166,
                     "name": "ExpressionStatement",
-                    "src": "2305:21:0"
+                    "src": "2322:21:0"
                   },
                   {
                     "children": [
@@ -2413,12 +2413,12 @@
                                 },
                                 "id": 167,
                                 "name": "Identifier",
-                                "src": "2337:6:0"
+                                "src": "2354:6:0"
                               }
                             ],
                             "id": 169,
                             "name": "MemberAccess",
-                            "src": "2337:15:0"
+                            "src": "2354:15:0"
                           },
                           {
                             "attributes": {
@@ -2444,42 +2444,42 @@
                                 },
                                 "id": 170,
                                 "name": "Identifier",
-                                "src": "2353:4:0"
+                                "src": "2370:4:0"
                               }
                             ],
                             "id": 171,
                             "name": "MemberAccess",
-                            "src": "2353:12:0"
+                            "src": "2370:12:0"
                           }
                         ],
                         "id": 172,
                         "name": "FunctionCall",
-                        "src": "2337:29:0"
+                        "src": "2354:29:0"
                       }
                     ],
                     "id": 173,
                     "name": "ExpressionStatement",
-                    "src": "2337:29:0"
+                    "src": "2354:29:0"
                   }
                 ],
                 "id": 174,
                 "name": "Block",
-                "src": "1931:443:0"
+                "src": "1948:443:0"
               }
             ],
             "id": 175,
             "name": "FunctionDefinition",
-            "src": "1833:541:0"
+            "src": "1833:558:0"
           }
         ],
         "id": 176,
         "name": "ContractDefinition",
-        "src": "28:2349:0"
+        "src": "28:2366:0"
       }
     ],
     "id": 177,
     "name": "SourceUnit",
-    "src": "0:2377:0"
+    "src": "0:2394:0"
   },
   "compiler": {
     "name": "solc",
@@ -2490,8 +2490,13 @@
       "events": {},
       "links": {},
       "address": "0xc1f96c26e494f35d6bdce6ddd58f7bd9fe2a9c26"
+    },
+    "1517732567905": {
+      "events": {},
+      "links": {},
+      "address": "0xe354533890df97e4793f362132d5905f4da1bfec"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-02-04T06:19:05.284Z"
+  "updatedAt": "2018-02-04T08:55:47.817Z"
 }
