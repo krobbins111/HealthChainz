@@ -25,11 +25,26 @@
       </div>
   </div>
 </body>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
 <script>
+      function retreiveData(){
+           var jqxhr = $.post( "/getdoctor", {accessKey:document.getElementById("docAccess").value}, function(data) {
+               console.log(data);
+                  console.log( "success " + data );
+                })
+                  .fail(function(data) {
+                    console.log( "error "  + data);
+                  });
+            
+        }
         var userAccessKey;
         function retreiveData(){
             userAccessKey= document.getElementById("userAccess").value;
             console.log(userAccessKey); 
         }
         document.getElementById("submit").onclick = function() {retreiveData()};
-    </script>
+        </script>
