@@ -3,6 +3,10 @@
 <head>
   <title>BlockRx</title>
   <link rel="stylesheet" type="text/css" href="approval.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -15,21 +19,40 @@
         <li><a href=#>About</a></li>
       </ul>
     </nav>
-    <div class="enter-content">
-            <table id="info-table">
+    <p><br></br></p>
+    <div class = "enter-content">
+    <div class="container">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
                     <tr>
                       <th>Patient No.</th>    
                       <th>Service</th>
                       <th>Description</th>
                       <th>Cost</th>  
-                      <th>Approval</th>
-                    </tr>    
-                    <tr>
-                        <td><input type="text" id="patientNo" name="Access Key" placeholder="Patient No. E.g 8888888"></td>
-                        <td><input type="text" id="service" name="Access Key" placeholder="Service"></td>
-                        <td><input type="text" id="description" name="Access Key" placeholder="Description"></td>
-                        <td><input type="text" id="price" name="Access Key" placeholder="Cost"></td>
-                        <td><button type = "button" id= "approve">Approve</button><button type = "button" id= "dispute">Deny</button></td>
-                    </tr> 
-                    </table>
+                    </tr>   
+                  </thead>
+                  <tbody></tbody> 
+                  </table>
+                    <script>
+                      $(document).ready(function(data){
+                        $.getJSON("sample.json", function(data) {
+                          var items = []; //json object holding array 
+
+                          $.each(data, function(index, value){
+                            items.push("<tr>"); 
+                            items.push("<td id= ''" + key + "''>" + value.billinfo.service + "</td>");
+                            items.push("<td id= ''" + key + "''>" + value.billinfo.description + "</td>");
+                            items.push("<td id= ''" + key + "''>" + value.billinfo.price + "</td>");
+                            items.push("<td id= ''" + key + "''>" + value.accesskey + "</td>");
+                            items.push("<td id= ''" + key + "''>" + value.billinfo.service + "</td>");
+                            items.push("</tr>"); 
+                            }); //populating array holding 
+                            $("<tbody/>", {html: items.join("")}).appendTo("table");
+                        });
+                      });
+                      
+                    </script>
+
     </div>
+    </div>
+  </body>
