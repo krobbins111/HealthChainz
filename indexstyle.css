@@ -1,5 +1,7 @@
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('index_background.jpg');
+    background-size: cover;
 }
 
 .header {
@@ -26,7 +28,6 @@ body{
   .header li {
     display: inline;
   }
-  
   .enter-content {
     position: relative;
     margin-top: 10%;
@@ -34,7 +35,7 @@ body{
     width: 60%;
     left: 20%;
     text-align: center;
-    background: url("index_background.jpg");
+    
   }
 
   .enter-content a{
@@ -44,49 +45,37 @@ body{
   }
 
   .patient{
-      display: block;
-      padding: 60px;
-      padding-left: 60px;
+      position: absolute; 
+      margin-left: 15%;
+      padding: 10px;
+      top: 70vh;
       background: red;
       border-radius: 30px;
       
   }
   .patient:hover{
-    display: block;
-    position: relative;
-    top: -5px;
-    transition: .3s;
-    padding: 60px;
-    padding-left: 60px;
+    padding: 10px;
     background: blue;
     border-radius: 30px;
 }
   .doctor{
-      display: block;
-      margin-top: 50px;
-      padding: 60px;
-      background:red;
-      border-radius: 30px;
+    position: absolute;
+    margin-left: 15%;
+    padding: 10px;
+    top: 70vh;
+    background:red;
+    border-radius: 30px;
   }
 
   .doctor:hover{
-    display: block;
-    position: relative;
-    top: -5px;
-    transition: 1s;
-    margin-top: 50px;
-    padding: 60px;
+    
+    padding: 10px;
     background:rgb(48, 106, 216);
     border-radius: 30px;
 }
 
 .doctor:active{
-    display: block;
-    position: relative;
-    top: -5px;
-    transition: 5s;
-    margin-top: 50px;
-    padding: 60px;
+    padding: 10px;
     background:rgb(109, 4, 2);
     border-radius: 30px;
 }
