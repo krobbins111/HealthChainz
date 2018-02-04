@@ -35,9 +35,11 @@
     </div>
     </body>
     <script>
+      $(document).ready(function(){
         $.getJSON("sample.json", function(data){
           console.log(data);
         });
+      });
         var billInfo = [];
         function retreiveData(){
             var patientn = document.getElementById("patientNo").value;
