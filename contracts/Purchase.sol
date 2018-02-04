@@ -15,25 +15,6 @@ contract Purchase {
         value = msg.value / 2;
         require((2 * value) == msg.value);
     }
-    
-    function SetValue(uint _value) public
-    onlySeller
-    {
-        value = _value;
-    }
-    
-    function SetBuyerAddress(address _buyer) public
-    onlyBuyer
-    {
-        buyer = _buyer;
-    }
-    
-    function SetSellerAddress(address _seller) public
-    onlySeller
-    {
-        seller = _seller;
-    }
-    
 
     modifier condition(bool _condition) {
         require(_condition);
