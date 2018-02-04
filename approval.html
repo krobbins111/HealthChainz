@@ -36,7 +36,22 @@
                   </thead>
                   <tbody></tbody> 
                   </table>
-                    <script>
+                    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script>
+      function retreiveData(){
+           var jqxhr = $.post( "/approval", {accessKey:document.getElementById("userAccess").value}, function(data) {
+               console.log(data);
+                  console.log( "success " + data );
+                })
+                  .fail(function(data) {
+                    console.log( "error "  + data);
+                  });
+            
+        }
                       $(document).ready(function(data){
                         $.getJSON("sample.json", function(data) {
                           var items = []; //json object holding array 
