@@ -87,7 +87,10 @@ button{
   background-color: rgb(252, 90, 90);
 }
 
-
+.deny:hover{
+    background-color: red;
+    transition: .4s;
+}
 
 button:hover{
   position: relative;
