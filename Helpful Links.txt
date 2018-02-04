@@ -1,0 +1,100 @@
+﻿Authorization:
+http://jkaufman.io/spotify-auth-react-router/
+
+
+
+
+React Tutorial:
+https://www.lynda.com/React-Native-tutorials/Welcome/645061/686595-4.html
+
+
+Sample Health record dataset
+https://www.va.gov/BLUEBUTTON/docs/VA_My_HealtheVet_Blue_Button_Sample_Version_12_10.pdf
+
+
+
+
+Ethereum
+Github wiki - 
+https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+
+
+Ether token example and code
+https://www.ethereum.org/token
+
+
+
+
+Smart contract and project setup reference
+https://www.youtube.com/watch?v=8jI1TuEaTro&t=1086s
+
+
+
+
+Js web api for etheruem interface
+https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethcontract
+
+
+
+
+Richard!
+https://github.com/ethereum/wiki/wiki/web3js-api-reference
+
+
+
+
+Our site!!! 
+https://krobbins111.github.io/HealthChainz/
+
+
+
+
+Add connection string to gitignore
+
+
+Table population:
+https://www.youtube.com/watch?v=pUQFToFrMF4
+
+
+
+
+  
+
+
+
+
+
+
+
+[{"billinfo":{"service":"a","description":"s","price":"1"},"accessKey":"123"},{"billinfo":{"service":"f","description":"g","price":"65"},"accessKey":"123123"}]
+
+
+
+
+
+
+[ '0xf8d5d7bdb37a609d8012223bcae0491dee5a48fb',
+  '0x1dddcf1d457bc9b7ff773af910ab637dc33a7066',
+  '0x22978781bea213c31c6883c5ec2be240d2db6ca6',
+  '0xf2cc6699a35d43591e2fb77c97d09d17a8cc1103',
+  '0xdd80671b6fbddb1c588f07f1fb58eadfdabb5636',
+  '0x5aedbca9765dbacfa4d441e9d63989dd72bf4137',
+  '0x91e4bd4680aad52827397dade1a354ed178a23e8',
+  '0xd80447118e5d19b9181d4959f60da52741c535f7',
+  '0x8e0dc3c9d596fbe3c1cd03165beee979c1d525d8',
+  '0x52030711cf82ba6e08083124ebc28d94e495d509' ]
+
+
+
+
+https://krobbins111.github.io/HealthChainz/createbill.html
+ https://krobbins111.github.io/HealthChainz/createbill.html
+
+
+
+
+Put in head
+
+
+<script type="text/javascript" src="./path/to/web3.min.js"></script>
+<script type="text/javascript" src="./dist/truffle-contract.min.js"></script>
