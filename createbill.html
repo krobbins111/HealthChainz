@@ -42,8 +42,8 @@
   crossorigin="anonymous">
     </script>
     <script>
-        function retreiveData(){
-           var jqxhr = $.post( "/getdoctor", {accessKey:document.getElementById("docAccess").value}, function(data) {
+        function exportData(){
+           var jqxhr = $.post( "/sendbill", billinfo, function(data) {
                console.log(data);
                   console.log( "success " + data );
                 })
@@ -69,12 +69,7 @@
             billInfo.push(object);
             console.log(billInfo); 
         }
-        function exportData(){
-          var txtFile = "test.txt";
-          var file = new File([""],"file.json");
-          var str = JSON.stringify(billInfo);
-          console.log(str);
-        }
+
         document.getElementById("add").onclick = function() {retreiveData()};
         document.getElementById("finish").onclick = function() {exportData()};
     </script>
