@@ -46,17 +46,13 @@
                           $.each(data, function(index, value){
                             items.push("<tr>"); 
                             totalCost += value.billinfo.price;
-                            console.log(value.billinfo.service);
-                            console.log(value.billinfo.description);
-                            console.log(value.billinfo.price);
-                            console.log(value.accessKey);
+                            console.log(totalCost);
                             items.push("<td id= ''" + index + "''>" + value.accessKey + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.service + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.description + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.price + "</td>");
                             items.push("</tr>"); 
                             }); 
-                            console.log(totalCost);
                             $("<tbody/>", {html: items.join("")}).appendTo("table");
                         });
                       }); 
