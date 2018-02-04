@@ -34,7 +34,7 @@ body{
     width: 60%;
     left: 20%;
     text-align: center;
-    background: url("index_background.jpg")
+    background: url("index_background.jpg");
   }
 
   .enter-content a{
