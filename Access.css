@@ -1,27 +1,45 @@
 .header {
-  background: red;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 75px;
-  display: inline;
-}
+    background: rgb(252, 90, 90);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+  }
+  
+  .logo {
+    display: inline;
+    top: 10px;
+    position: relative;
+    left: 10%;
+    font-size: 40px;
+  }
+  
+  .header ul {
+    position: relative;
+    top: 10px;
+    list-style-type: none;
+    float: right;
+    margin-right: 10%;
+  }
+  
+  .header ul li {
+    display: inline;
+    margin-left: 40px;
+  }
 
-.logo {
-  display: inline;
-  position: relative;
-  left: 10%;
-}
+  .header ul li:hover {
+    background-color: rgb(34, 160, 154);
+    transition: .4s;
+    padding: 40px 20px 32px 20px;
+    display: inline;
+    margin-left: 40px;
+  }
+  .header ul li a{
+    text-decoration: none;
+    color: white;
+  }
 
-ul {
-  position: relative;
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-}
 
 .enter-content {
   position: relative;
