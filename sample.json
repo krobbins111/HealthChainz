@@ -1,4 +1,3 @@
-Access-Control-Allow-Origin: *
 {
 	"service":"surgery", 
 	"cost":2626, 
