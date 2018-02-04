@@ -48,8 +48,10 @@
             var serv = document.getElementById("service").value;
             var desc = document.getElementById("description").value;
             var pri = document.getElementById("price").value;
-            var billItem = {patientNo:patientn, service:serv, description:desc,price:pri};
-            billInfo.push(billItem);
+            var billItem = {service:serv, description:desc,price:pri};
+            var access = patientn;
+            var object = {billinfo:billItem, accessKey:access};
+            billInfo.push(object);
             console.log(billInfo); 
         }
         function exportData(){
