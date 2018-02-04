@@ -1,1 +1,1 @@
-[{"billinfo":{"service":"a","description":"s","price":"1"},"accessKey":"123"},{"billinfo":{"service":"f","description":"g","price":"65"},"accessKey":"123123"}]
+[{"billinfo":{"service":"a","description":"s","price":1},"accessKey":"123"},{"billinfo":{"service":"f","description":"g","price":65},"accessKey":"123123"}]
