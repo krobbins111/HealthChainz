@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <head>
-  <title>Sign In</title>
+  <title>Sign</title>
   <link rel="stylesheet" type="text/css" href="Access.css">
 </head>
 
@@ -21,32 +21,15 @@
         <input type="text" id="userAccess" name="Access Key" placeholder="Access Key">
         <br>
       </form>
-        <button type = "button" id = "submit"><a href="approval.html">Access</a></button>
+        <button type = "button" class = "submit"><a href="approval.html">Access</a></button>
       </div>
   </div>
 </body>
-<!--<script
-  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">
-</script>
--->
 <script>
-      function retreiveData(){
-           var jqxhr = $.post( "/health", {accessKey:document.getElementById("userAccess").value}, function(data) {
-               console.log(data);
-                  console.log( "success " + data );
-                })
-                  .fail(function(data) {
-                    console.log( "error "  + data);
-                  });
-            
-        }
         var userAccessKey;
-        function retreiveData1(){
+        function retreiveData(){
             userAccessKey= document.getElementById("userAccess").value;
             console.log(userAccessKey); 
-            retreiveData();
         }
-        document.getElementById("submit").onclick = function() {retreiveData1()};
-        </script>
+        document.getElementById("submit").onclick = function() {retreiveData()};
+    </script>
