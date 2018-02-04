@@ -15,7 +15,10 @@
       </ul>
     </nav>
     <div class="enter-content">
+      <center>
         <h1>Create Bill</h1>
+      </center>
+        <center>
         <table id="info-table">
         <tr>
           <th>Patient No.</th>    
@@ -30,9 +33,28 @@
             <td><input type="text" id="price" name="Access Key" placeholder="Cost"></td>
         </tr> 
         </table>
-        <input align="middle" type="submit" name="submit" id = "add" value="Add">
+      </center>
+        <center>
+        <button align="middle" type="submit" id = "add">Add</button>
         <br>
-        <input align="middle" type="submit" name="submit" id = "finish" value="Finish">
+        <button align="middle" type="submit" id = "finish">Submit</button>
+      </center>
+      <div class="container">
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+                  <tr>
+                    <th>Patient No.</th>    
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Cost</th>  
+                  </tr>   
+                </thead>
+                <tbody></tbody> 
+                </table>
+                <script>
+                
+                      
+                    </script>
     </div>
     </div>
     </body>
@@ -40,8 +62,6 @@
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous">
-    </script>
-    <script>
         function exportData(){
            var jqxhr = $.post( "/sendbill", billinfo, function(data) {
                console.log(data);
@@ -62,9 +82,32 @@
             var access = patientn;
             var object = {billinfo:billItem, accessKey:access};
             billInfo.push(object);
-            console.log(billInfo); 
-        }
+            console.log(billInfo);
+            var dat;
+            var tableID = "info-table";
+            for(let i = 0; i < billInfo.length; i++){
+              dat = billInfo[i]; 
+              function addRow(tableID) {
+               // Get a reference to the table
+                    var tableRef = document.getElementById(tableID);
 
+                  // Insert a row in the table at row index 0
+                     var newRow = tableRef.insertRow(1);
+
+                   // Insert a cell in the row at index 0
+                   var newCell = newRow.insertCell(0);
+
+                   // Append a text node to the cell
+                   var newText = document.createTextNode('New top row');
+                    newCell.appendChild(newText);
+}
+
+// Call addRow() with the ID of a table
+addRow('TableA');
+            }
+        }
+            
         document.getElementById("add").onclick = function() {retreiveData()};
         document.getElementById("finish").onclick = function() {exportData()};
     </script>
+
