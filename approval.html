@@ -39,12 +39,12 @@
                           var items = []; //json object holding array 
 
                           $.each(data, function(index, value){
-                            console.log(value.billinfo.service);
                             items.push("<tr>"); 
+                            console.log(value.billinfo.service);
                             console.log(value.billinfo.description);
                             console.log(value.billinfo.price);
-                            console.log(value.accesskey);
-                            items.push("<td id= ''" + index + "''>" + value.accesskey + "</td>");
+                            console.log(value.accessKey);
+                            items.push("<td id= ''" + index + "''>" + value.accessKey + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.service + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.description + "</td>");
                             items.push("<td id= ''" + index + "''>" + value.billinfo.price + "</td>");
