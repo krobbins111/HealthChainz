@@ -37,11 +37,12 @@
     <script>
       $(document).ready(function(){
         console.log('before');
-        $.getJSON('sample.json', function(data){
+        var s = $.getJSON('sample.json', function(data){
           console.log('HI');
           console.log(data);
         });
         console.log('after');
+        console.log(s);
       });
         var billInfo = [];
         function retreiveData(){
