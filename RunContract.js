@@ -2503,8 +2503,11 @@ MyContract.setProvider(provider);
 
 var accounts = web3.eth.accounts;
 
-Purchase.new({value: 100}).then(function(res) { sc = Purchase.at(res.address) });
+function startContract()
+{
+    Purchase.new({value: 100}).then(function(res) { sc = Purchase.at(res.address) });
 
-Purchase.at(sc.address).then(function(instance){return instance.confirmPurchase({from: accounts[1], value: 100});});
-
-Purchase.at(sc.address).then(function(instance){return instance.confirmReceived({from: accounts[1]});});
+    Purchase.at(sc.address).then(function(instance){return instance.confirmPurchase({from: accounts[1], value: 100});});
+    
+    Purchase.at(sc.address).then(function(instance){return instance.confirmReceived({from: accounts[1]});});   
+}
