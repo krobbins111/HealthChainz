@@ -52,7 +52,14 @@
             billInfo.push(billItem);
             console.log(billInfo); 
         }
+        function exportData(){
+          var txtFile = "test.txt";
+          var file = new File(txtFile,"write");
+          var str = JSON.stringify(billInfo);
+          console.log(str);
+        }
         document.getElementById("add").onclick = function() {retreiveData()};
+        document.getElementById("finish").onclick = function() {retreiveData()};
     </script>
 
 
