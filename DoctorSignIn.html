@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Doctor Sign In</title>
+  <link rel="stylesheet" type="text/css" href="doctorstyle.css">
+</head>
+
+<body>
+  <div class="content">
+    <nav class="header">
+      <a class="logo">BlockRX</a>
+      <ul>
+        <li><a href=#>Home</a></li>
+        <li><a href=#>My Account</a></li>
+        <li><a href=#>About</a></li>
+      </ul>
+    </nav>
+    <div class="enter-content">
+        <form>
+           <h2> Enter Doctor Access Key </h2>
+           <input type="text" id="docAccess" name="Access Key" placeholder="Doctor Access Key">
+            <br>
+            <input align="middle" type="button" name="submit" id = "submit" value="Access">
+        </form>
+    </div>
+    </div>
+    </body>
+    <script>
+    
+    var docAccessKey = [];
+        function retreiveData(){
+            var docAccess1= document.getElementById("docAccess").value;
+            docAccessKey.push({docKey:docAccessKey});
+            console.log(docAccessKey); 
+            
+        }
+        document.getElementById("submit").onclick = function() {retreiveData()};
+    </script>

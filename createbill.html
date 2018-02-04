@@ -3,13 +3,13 @@
   <title>Create Bill</title>
   <link rel="stylesheet" type="text/css" href="create.css">
 </head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
   <div class="content">
     <nav class="header">
       <a class="logo">BlockRX</a>
       <ul>
-        <li><a href=#>Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href=#>My Account</a></li>
         <li><a href=#>About</a></li>
       </ul>
@@ -30,12 +30,19 @@
             <td><input type="text" id="price" name="Access Key" placeholder="Cost"></td>
         </tr> 
         </table>
-        <input align="middle" type="submit" name="submit" id = "add" value="Access">
+        <input align="middle" type="submit" name="submit" id = "add" value="Add">
     </div>
     </div>
     </body>
     <script>
-        
+      $(document).ready(function(){
+        console.log('before');
+        var s = $.getJSON('sample.json', function(data){
+          console.log('HI');
+          console.log(data);
+        });
+        console.log('after');
+      });
         var billInfo = [];
         function retreiveData(){
             var patientn = document.getElementById("patientNo").value;
@@ -48,3 +55,6 @@
         }
         document.getElementById("add").onclick = function() {retreiveData()};
     </script>
+
+
+https://github.com/krobbins111/HealthChainz/blob/master/sample.json
