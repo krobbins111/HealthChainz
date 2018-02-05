@@ -91,6 +91,7 @@ input[type="text"]{
 .submit:hover{
   color:white;
   margin-top: 9vh;
+  margin-bottom: 1vh;
   border: none;
   border-radius: 30px;
   padding: 20px 60px 20px 60px;
